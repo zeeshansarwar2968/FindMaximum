@@ -53,9 +53,10 @@ namespace FindMaximum
                         Console.WriteLine(RefactoredClass<float>.MaximumValue(10.2f, 20.5f, 20.5f));
                         break;
                     case 6:
-                        int[] array1 = { 10, 20, 30, 40, 50 };
+                        int[] array1 = { 65, 87, 93, 2, 45 };
                         MoreParameters<int> objParameters = new MoreParameters<int>(array1);
-                        Console.WriteLine("Maximum value amongst the provided numbers is : {0}", objParameters.GetMaximum(array1));
+                        //Console.WriteLine("Maximum value amongst the provided numbers is : {0}", objParameters.GetMaximum(array1));
+                        objParameters.printMax();
                         break;
                     default:
                         Console.WriteLine("Invalid option/entry, please choose again.");

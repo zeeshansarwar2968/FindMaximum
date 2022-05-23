@@ -27,5 +27,11 @@ namespace FindMaximum
             var sortedValues = SortValue(this.value);
             return sortedValues[sortedValues.Length - 1];
         }
+
+        public void printMax()
+        {
+            var maximumValue = GetMaximum(this.value);
+            Console.WriteLine("Maximum value is: " + maximumValue);
+        }
     }
 }
