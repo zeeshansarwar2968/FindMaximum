@@ -8,7 +8,7 @@ namespace FindMaximum
         {
             Console.WriteLine("\t\t\t\t\tFind Maximum Problem using Generics");
             Console.WriteLine("");
-            Console.WriteLine("1.Compare three integer numbers \n2.Compare three float numbers \n3.Compare three string values \n4.Compare three values using Generic Method \n5.Compare three values using Generic Class");
+            Console.WriteLine("1.Compare three integer numbers \n2.Compare three float numbers \n3.Compare three string values \n4.Compare three values using Generic Method \n5.Compare three values using Generic Class \n6.Compare more than three values");
             Console.WriteLine("");
             Console.WriteLine("\t\t\t\t\t    Please enter 0 to exit");
             Console.WriteLine("");
@@ -51,6 +51,11 @@ namespace FindMaximum
                         Console.WriteLine(RefactoredClass<int>.MaximumValue(30,65,20));
                         Console.WriteLine(RefactoredClass<string>.MaximumValue("Abbc", "Abc", "AAbc"));
                         Console.WriteLine(RefactoredClass<float>.MaximumValue(10.2f, 20.5f, 20.5f));
+                        break;
+                    case 6:
+                        int[] array1 = { 10, 20, 30, 40, 50 };
+                        MoreParameters<int> objParameters = new MoreParameters<int>(array1);
+                        Console.WriteLine("Maximum value amongst the provided numbers is : {0}", objParameters.GetMaximum(array1));
                         break;
                     default:
                         Console.WriteLine("Invalid option/entry, please choose again.");
