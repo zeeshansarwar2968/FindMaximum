@@ -8,7 +8,7 @@ namespace FindMaximum
         {
             Console.WriteLine("\t\t\t\t\tFind Maximum Problem using Generics");
             Console.WriteLine("");
-            Console.WriteLine("1.Compare three integer numbers \n2.Compare three float numbers \n3.Compare three string values \n4.Compare three values using Generic Method");
+            Console.WriteLine("1.Compare three integer numbers \n2.Compare three float numbers \n3.Compare three string values \n4.Compare three values using Generic Method \n5.Compare three values using Generic Class");
             Console.WriteLine("");
             Console.WriteLine("\t\t\t\t\t    Please enter 0 to exit");
             Console.WriteLine("");
@@ -45,6 +45,12 @@ namespace FindMaximum
                         Console.WriteLine(RefactoredMethod.MaximumValue(65, 20, 10));
                         Console.WriteLine(RefactoredMethod.MaximumValue(10.2f, 20.5f, 20.5f));
                         Console.WriteLine(RefactoredMethod.MaximumValue("Abbc", "Abc", "AAbc"));
+                        break;
+                    case 5:
+                        Console.WriteLine("Executing three test cases for Finding Maximum Value");
+                        Console.WriteLine(RefactoredClass<int>.MaximumValue(30,65,20));
+                        Console.WriteLine(RefactoredClass<string>.MaximumValue("Abbc", "Abc", "AAbc"));
+                        Console.WriteLine(RefactoredClass<float>.MaximumValue(10.2f, 20.5f, 20.5f));
                         break;
                     default:
                         Console.WriteLine("Invalid option/entry, please choose again.");
